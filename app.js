@@ -38,7 +38,7 @@ app.post("/", function(req, res){
   //after enter
   const options ={
     method: "POST",
-    auth: "hritwick1:015cc26598692398b58f707eb59439082-us7" //anystring:apikey
+    auth: "hritwick1:15cc26598692398b58f707eb59439082-us7" //anystring:apikey
   }
   // made request
   const request =https.request(url, options, function(response){
@@ -64,6 +64,6 @@ app.post("/failure", function(req,res){
 // 15cc26598692398b58f707eb59439082-us7
 //list id
 // eef2627423
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 3000, function(){//process.env.PORT is for heroku server terminal
   console.log("Port 3000 started working");
 })
