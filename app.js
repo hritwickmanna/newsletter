@@ -33,13 +33,7 @@ app.post("/", function(req, res){
   };
   //stringify the data
   const jsonData = JSON.stringify(data);
-  //url of mailchimp requesting
-  const url ="https://us7.api.mailchimp.com/3.0/lists/eef2627423"; //lists/listid and us 7(apikey last letter)
-  //after enter
-  const options ={
-    method: "POST",
-    auth: "hritwick1:15cc26598692398b58f707eb59439082-us7" //anystring:apikey
-  }
+
   // made request
   const request =https.request(url, options, function(response){
     response.on("data", function(data){ //searching for any data
