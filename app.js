@@ -54,10 +54,7 @@ app.post("/failure", function(req,res){
   // res.sendFile(__dirname + "/signup.html");
   res.redirect("/");
 })
-//api key
-// 15cc26598692398b58f707eb59439082-us7
-//list id
-// eef2627423
+
 app.listen(process.env.PORT || 3000, function(){//process.env.PORT is for heroku server terminal
   console.log("Port 3000 started working");
 })
